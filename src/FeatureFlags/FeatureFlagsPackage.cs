@@ -31,13 +31,13 @@ namespace FeatureFlags
     /// </remarks>
     [PackageRegistration(UseManagedResourcesOnly = true, AllowsBackgroundLoading = true)]
     [Guid(PackageGuidString)]
-    [ProvideOptionPage(typeof(FeatureFlagsOptionPage), "Environment", "FeatureFlags", 113, 114, false, 115)]
+    [ProvideOptionPage(typeof(FeatureFlagsOptionPage), "Environment", "FeatureFlags🌺", 113, 114, false, 115)]
     public sealed class FeatureFlagsPackage : AsyncPackage
     {
         /// <summary>
         /// FeatureFlagsPackage GUID string.
         /// </summary>
-        public const string PackageGuidString = "f35d0db7-2038-40e2-b0d0-13369844ca8c";
+        public const string PackageGuidString = "972E8F85-68C3-4A7A-9F8E-6C0D88FCF1AE";
 
         /// <summary>
         /// Initializes a new instance of the <see cref="FeatureFlagsPackage"/> class.

@@ -2,9 +2,9 @@
 <!-- Copyright (c) Paul Harrington.  All Rights Reserved.  Licensed under the MIT License.  See LICENSE in the project root for license information. -->
 <PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011" xmlns:d="http://schemas.microsoft.com/developer/vsx-schema-design/2011">
     <Metadata>
-        <Identity Id="FeatureFlagsPreview.ad59429d-ef32-495b-8ff6-7c213f7132b8" Version="1.0.10" Language="en-US" Publisher="Paul Harrington" />
-        <DisplayName>Feature Flags</DisplayName>
-        <Description xml:space="preserve">Control Visual Studio feature flags through Tools/Options.</Description>
+        <Identity Id="FeatureFlags🌺.EAA5B56C-DA54-4C7E-9628-AA665EC2C393" Version="1.0.11" Language="en-US" Publisher="Laura Andelare" />
+        <DisplayName>Feature Flags 🌺</DisplayName>
+        <Description xml:space="preserve">Control Visual Studio feature flags through Tools/Options, now with 100% less telemetry!</Description>
         <License>LICENSE</License>
         <ReleaseNotes>ReleaseNotes.txt</ReleaseNotes>
         <Tags>Feature Flags</Tags>

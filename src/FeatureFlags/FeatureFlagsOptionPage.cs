@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace FeatureFlags
 {
-    [Guid("38300D6F-E7DE-4FFD-816D-DD8F95A300F8")]
+    [Guid("421B127D-D5A0-42EC-8534-692DABF30A26")]
     internal class FeatureFlagsOptionPage : DialogPage
     {
         private FeatureFlagsUserControl _page;
