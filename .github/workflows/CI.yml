@@ -2,17 +2,11 @@ name: CI
 
 on:
   push:
-    branches: [ main ]
-  pull_request:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
 
   build:
-
-    strategy:
-      matrix:
-        configuration: [Debug, Release]
 
     runs-on: windows-latest
 
@@ -30,17 +24,11 @@ jobs:
     - name: Restore and build
       run: msbuild src /t:Restore,Build /p:Configuration=$env:Configuration /p:DeployExtension=false
       env:
-        Configuration: ${{ matrix.configuration }}
+        Configuration: Release
 
     # Upload the VSIX package: https://github.com/marketplace/actions/upload-a-build-artifact
     - name: Upload build artifact (VSIX)
       uses: actions/upload-artifact@v4
       with:
-        name: VSIX Package (${{ matrix.configuration }})
-        path: src/VSIX/bin/**/*.vsix
-
-    - name: Upload build artifact (VSIX)
-      uses: actions/upload-artifact@v4
-      with:
-        name: VSIX Package (${{ matrix.configuration }}, Dev 17)
+        name: VSIX Package
         path: src/VSIX_Dev17/bin/**/*.vsix
