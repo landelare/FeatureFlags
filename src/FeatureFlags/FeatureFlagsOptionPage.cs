@@ -17,7 +17,6 @@ namespace FeatureFlags
 
         private FeatureFlagsUserControl CreatePage()
         {
-            Telemetry.Client.TrackPageView("FeatureFlags");
             var featureFlagsDataModel = new FeatureFlagsDataModel(GetSettingsManagerService());
             return new FeatureFlagsUserControl(featureFlagsDataModel);
         }

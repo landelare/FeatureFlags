@@ -27,7 +27,6 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Properties\AssemblyInfo.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SettingsStoreExtensions.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Telemetry.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)WritableFeatureFlagsStore.cs" />
   </ItemGroup>
   <ItemGroup>

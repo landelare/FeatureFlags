@@ -40,7 +40,6 @@ namespace FeatureFlags
                 if (currentSetting != desiredSetting)
                 {
                     _dataModel.EnableFeature(featureName, desiredSetting);
-                    Telemetry.Client.TrackEvent("FeatureFlagChanged", new Dictionary<string, string> { ["FeatureName"] = featureName, ["Enabled"] = desiredSetting.ToString() });
                 }
             }
         }
@@ -52,8 +51,6 @@ namespace FeatureFlags
                 var featureName = allFeatureFlagsListBox.Items[i].ToString();
                 allFeatureFlagsListBox.SetItemChecked(i, _dataModel.IsFeatureEnabledByDefault(featureName));
             }
-
-            Telemetry.Client.TrackEvent("ResetAllButtonClicked");
         }
 
         private void AllFeatureFlagsListBox_SelectedIndexChanged(object sender, EventArgs e)
